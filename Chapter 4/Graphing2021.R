@@ -111,6 +111,15 @@ date_hourly = paste(hours[(0:8759)%%24+1],date_daily[(0:8759)%/%24+1])
 date_hourly = as_datetime(date_hourly, format="%H %Y-%m-%d")
 #Graphing variables
 
+
+
+#prices 2021
+ggplot() +
+  geom_line(aes( x = date_hourly, y = ts(replacee_na(as.double(elspot_prices_2021_hourly_eur$...9[-1]),stand=FALSE), start = 1 ) , colour = "Observed Values")) +
+  theme(legend.title = element_blank() ) + xlab("") + ylab("Hourly Prices in Eur/Mwh") +
+  scale_color_manual(values = c("black", "red" ))
+
+
 #consumption 2021
 #hourly
 ggplot() +
