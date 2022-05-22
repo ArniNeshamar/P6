@@ -191,7 +191,7 @@ ggplot() +
   scale_color_manual(values = c("black", "red" ))
 
 
-#Oilprices 2021 defective
+#Oilprices 2021-
 
 ggplot() +
   geom_line(aes( x = date_daily, y = ts(replacee_na(as.double(OilDailyComplete$...2[-1]),stand=FALSE,hour=TRUE), start = 1 ) , colour = "Observed Values")) +
