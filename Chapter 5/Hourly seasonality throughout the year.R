@@ -21,7 +21,7 @@ date_hourly = as_datetime(date_hourly, format="%H %Y-%m-%d")
 
 elspot
 
-#Seasonaity of same hour
+#Seasonaity of same hour, dates added
 elspot = elspot_prices_2021_daily_eur$...9 #DK1 is row 9 
 elspot$Date <- as.Date(elspot$Date, "%m/%d/%Y") #add dates
 plot(elspot, xlab = "", ylab = "Price in Eur/h", main = "Seasonality of hourly prices of 2021")
