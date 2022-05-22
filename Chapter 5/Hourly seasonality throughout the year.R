@@ -2,7 +2,6 @@ rm(list=ls()) #Clear all
 
 
 elspot_prices_2021_hourly_eur <- read_excel("elspot-prices_2021_hourly_eur.xlsx")
-elspot_prices_2022_hourly_eur <- read_excel("elspot-prices_2022_hourly_eur.xlsx")
 elspot_prices_2021_daily_eur <- read_excel("elspot-prices_2021_daily_eur.xlsx")
 
 
